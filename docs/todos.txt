@@ -10,4 +10,6 @@ CHACHE:
 SOCKETS
 TYPESCRIPT: https://www.udemy.com/course/understanding-typescript/learn/lecture/
 REACT": 
-
+INGRESS:
+API GATEWAY:
+MICROSERVICES:
