@@ -1,3 +1,5 @@
+// https://www.udemy.com/course/design-patterns-javascript/learn/quiz/4632000#overview
+
 /* 
 Creational : How Objects are created 
     - Singleton
@@ -10,9 +12,9 @@ Structural : How objects are linked to each other
     - Proxy
 
 Behavioral : How Object Communicate with each other
-    - Itterator
+    - Iterator
     - Observer
     - Mediator
     - State
 
-*/ 
+*/

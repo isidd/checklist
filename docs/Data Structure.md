@@ -107,3 +107,25 @@ const longestWord = (str)=> str.split(" ").sort((a,b)=>b.length-a.length)[0] ;
 const longestWord = (str)=> str.split(" ").reduce((a,b)=>a.length-b.length >= 0 ? a:b) ;
 
 ```
+
+4.  Check for the Longest word in the string
+    ```sh
+    Example:
+    longestWord('this is siddhartha Pharasi') -> 'Siddhartha'
+    ```
+
+```sh
+const longestWord = (str)=>{
+    let longest = '' ;
+    let store = str.split(" ");
+    for(i of store){
+        if(i.length > longest.length) longest = i ;
+    }
+    return longest
+}
+
+const longestWord = (str)=> str.split(" ").sort((a,b)=>b.length-a.length)[0] ;
+
+const longestWord = (str)=> str.split(" ").reduce((a,b)=>a.length-b.length >= 0 ? a:b) ;
+
+```

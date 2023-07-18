@@ -1,0 +1,13 @@
+import './middleNumber';
+import './addTwoNumbers';
+import './cycle1';
+import './cycle2';
+import './deleteNode';
+import './duplicteNumber';
+import './happyNumner';
+import './mergeSortedList';
+import './palindrome';
+import './removeDuplicate';
+import './removeElements';
+import './removeNthNodeFromTheEnd';
+import './reverse';
