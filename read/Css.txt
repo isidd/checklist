@@ -1,0 +1,23 @@
+=============================CSS:========================
+
+- default value of box-model
+- some coding related to overlay popup
+- flex vs grid css property
+- creating responsive images, few helpers 'srcset', 'picture' tag
+- getting attribute of all required field in form using native JS
+- HTML fetch, Diff between form POST and GET.
+- Handling cache while making api calls.
+- What is float?
+- CSS Specificity
+- CSS preprocessors, Webworkers, How to secure Javascript code (Server side as well as client side)
+- Explain display property and its different values and their significance.
+- Explain position property and its different values and their significance.
+- Explain CSS Box model.
+- What are different CSS pseudo classes and pseudo elements?
+- Explain Sprite images and their management?
+- What is CSS flexbox?
+- How can you implement Grid system like Bootstrap in CSS?
+- Explain different set of media queries in CSS.
+- Explain responsiveness and how it can be achieved?
+- CSS Specificity, noramalized CSS and Reset CSS
+- Mixins vs function

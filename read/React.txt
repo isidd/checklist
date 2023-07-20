@@ -1,0 +1,32 @@
+====================================React JS==================================================
+
+- virtual dom
+- diffing algo
+- why reactjs over angular
+- difference between functional and class components
+- use of redux
+- difference between container and presentation component
+- react life cycle methods
+- critical path render , Server Side Rendering  (SSR) 
+- React architecture, philosophy, flow.
+- Why react over angular.
+- Project architecture - Improvements over time. Limitations. Why the said structure is better than the one which was mentioned earlier.
+- Redux - Why we Need Redux, middleware.
+- SSR with react. Isomorphic React.
+- Bundle segregation. Bundle chunking - Different ways to achieve it. Webpack, route based chunking, component based.
+- ES6 usefulness, IE compatibility issues, Transpiling using Babel.
+- React Lifecycles, details of each and how does it affect react performance.
+- Approach to create an app using react, starting from small components, Best practices.
+- New in react versions. How to keep upgrading and make application backward compatible.
+- Create a loader component that shows loading whenever async call is made. (Involved redux, dispatch, store and one way data flow of react)
+- Http2
+- Web Accessibility. How to implement.
+- critical path render
+- How to improve performance of webapp in general.
+- Optimization of webpack
+
+
+
+
+
+

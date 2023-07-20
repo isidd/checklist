@@ -1,0 +1,48 @@
+==================Javascript===========================
+
+1. Prototypical Inheritance vs class based inheritance (done)
+2. Generator functions (done)
+3. Promises - pros and cons (done)
+4. Design patterns - how to use them to solve problems (done)
+5. SOLID Principals (one)
+6. closures with example 
+7. difference between call, apply and bind
+8. difference between arguments and array
+9. call the array reduce function on arguments
+10. scoping of variables
+11. JS hoisting,
+12. few questions on setTimeout
+13. IIFEs
+14. Destructuring in JS
+15. Context related problems, call, apply binding questions (coding)
+16. Prototypes, prototypal inheritance etc
+17. What is scope in JavaScript/ JS?
+18. How you debug the JS code?
+19. What is JS hoisting?
+20. How can you improve performance of a web page while working with JS?
+21. Explain REST and AJAX.
+22. What are different HTTP methods used in REST and their significance?
+23. What is Object oriented JS?
+24. How can we create classes and instances in JS?
+25. CORS, CSRF, XSS
+26. Change request/response header - also how to change it using JS
+27. Micro-tasking
+28. How to secure JS code?
+29. How to reduce HTTP requests etc.
+30. Difference between http and http only.
+31. How to submit form without using JS
+32. OOJS/Functional Programming
+33. Public Private functions 
+
+|============================================|
+
+Performance and testing
+
+1. How to optimize performance?
+
+2. How to improve loading performance?
+
+3. What to check in a code review?
+
+Web accessibility, implementation and methods to implement?
+

@@ -1,0 +1,15 @@
+NGINX : https://www.youtube.com/watch?v=D5grhfkjjXE&ab_channel=CyberSecurityeLearning
+WEBPACK : https://www.udemy.com/course/webpack-optimizing-for-production/
+DOCKER: 
+KUBERNETS: 
+SYSTEM DESIGN: 
+SQL:
+MONGO:
+NODE CORE: https://www.youtube.com/watch?v=GVLw17FNZ3A&list=PLCiGw8i6Nhvo08rQd9J7e19ToKMCJVKaM&ab_channel=Cododev
+CHACHE:
+SOCKETS
+TYPESCRIPT: https://www.udemy.com/course/understanding-typescript/learn/lecture/
+REACT": 
+INGRESS:
+API GATEWAY:
+MICROSERVICES:
