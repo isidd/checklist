@@ -33,3 +33,11 @@ for eg : Group chat
 Sol : socket.io
 WebRTC -> real time communication | but it is for browser to browser communication primary for video and voice
 WebTransport -> its a better version of web sockets faster handshake better reliability
+
+Web Sockets ->
+Pros
+-> Bidirectional low latency communication
+-> Reduced overhead of Http request
+Cons
+-> Client responsible for connection
+-> Scalability challenges
