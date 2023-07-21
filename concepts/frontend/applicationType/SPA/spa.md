@@ -30,4 +30,6 @@ Cons
 
 - SEO is challenging
 - JavaScript is strictly required | we have to turn on the javascript on the browser so that it can run the javascript | everything happens  
-  through javascript
+  through javascript (re-render) and if it's turned off our page wouldn't work at all
+
+  It tends to favour more modern browser
