@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline & Block Styling</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Changing block level element to Inline */
+      li {
+        display: inline;
+      }
+      li a {
+        padding-right: 20px;
+      }
+      /* margin auto will not work on inline elements its only for block element */
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      /* we can't use width, margin on inline  */
+      .box {
+        /* display: block; */
+        display: inline-block;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+        width: 33.1%;
+        box-sizing: border-box; /* this can remove margin and paddings */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <br /><br />
+    <img src="./images/leaf.png" alt="My image" />
+    <br /><br />
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nisi
+        ratione. Optio unde in voluptatum voluptate? Nisi molestias vitae ipsam.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nisi
+        ratione. Optio unde in voluptatum voluptate? Nisi molestias vitae ipsam.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nisi
+        ratione. Optio unde in voluptatum voluptate? Nisi molestias vitae ipsam.
+      </p>
+    </div>
+  </body>
+</html>

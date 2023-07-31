@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em / rem units</title>
+    <style>
+      /* em corresponds to parent element rem corresponds to root element  */
+      #box-1 {
+        font-size: 20px;
+      }
+
+      #box-1 p {
+        font-size: 1.5em; /* parent is having 20px fontsize so paragraph -> 20*1.5 = 30px */
+        /* font-size: 1.5rem; root is having 16px fontsize so paragraph -> 16*1.5 = 24px */
+        padding: 1em; /* for padding it will take the reference of the  */
+      }
+
+      /* with nested element it is going to cause more and more em reference  */
+      #box-1 ul {
+        font-size: 1.2em;
+      }
+
+      #box-2 h3 {
+        font-size: 2rem;
+      }
+
+      #box-2 p {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+        padding: 1.5rem;
+      }
+      /* Browser accessibility uses rem units with em there is no effect   */
+    </style>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab
+        impedit iusto quidem at aliquid asperiores voluptatibus quaerat odit
+        eaque.
+      </p>
+      <ul>
+        <li>1</li>
+        <li>
+          2
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>
+              3
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+              </ul>
+            </li>
+            <li>4</li>
+          </ul>
+        </li>
+        <li>3</li>
+      </ul>
+    </div>
+    <div id="box-2">
+      <h3>Box 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab
+        impedit iusto quidem at aliquid asperiores voluptatibus quaerat odit
+        eaque.
+      </p>
+    </div>
+  </body>
+</html>
