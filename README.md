@@ -1,1 +1,1 @@
-# This is the computer science and full stack checklist
+# This is a full stack checklist
