@@ -2,9 +2,9 @@ use std::fmt::{self, Formatter, Display};
 
 struct City {
     name: &'static str,
-    // Latitude
+    // Latitude 
     lat: f32,
-    // Longitude
+    // Longitude 
     lon: f32,
 }
 

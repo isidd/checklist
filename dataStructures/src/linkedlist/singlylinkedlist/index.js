@@ -17,7 +17,7 @@ export default class Singlylinkedlist {
 1. fn acc val 
 2. create new node with val. 
 3. if no head set the head and tail to the newly created node 
-4. set the next prop on the tail to newly created node nad updated the tail 
+4. set the next prop on the tail to newly created node and updated the tail 
 */
     push(val) {
         let node = new Node(val);
