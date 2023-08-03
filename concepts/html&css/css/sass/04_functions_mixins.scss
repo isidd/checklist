@@ -1,0 +1,45 @@
+@import url("./_funtions.scss");
+
+// Function returns a value
+
+// Set Text Color | main use case
+
+body {
+  background-color: $light-color;
+  color: set-color($light-color);
+  font-family: $font-stack;
+  line-height: 1.5;
+}
+
+header {
+  background-color: $dark-color;
+  color: set-color($dark-color);
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+  h3 {
+    font-size: 2rem;
+  }
+  //   section-a
+  &-a {
+    background-color: $primary-color;
+    color: set-color($primary-color);
+  }
+  &-b {
+    background-color: $secondary-color;
+    color: set-color($secondary-color);
+  }
+}
+
+a {
+  color: #333;
+  &:hover {
+    color: coral;
+  }
+}

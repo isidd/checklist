@@ -88,6 +88,7 @@ export class BinarySearchTree {
 }
 
 var tree = new BinarySearchTree();
+
 tree.insert(10);
 tree.insert(9);
 tree.insert(7);

@@ -1,0 +1,29 @@
+/* 
+button share a lot 
+padding 
+margin
+display
+ */
+
+%shared-btn {
+  display: inline;
+  padding: 0.7rem 0.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn {
+  &-light {
+    @extend %shared-btn;
+    background-color: $light-color;
+    color: #333;
+  }
+
+  &-dark {
+    @extend %shared-btn;
+    background-color: $dark-color;
+    color: #fff;
+  }
+}
