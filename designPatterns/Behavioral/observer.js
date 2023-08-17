@@ -1,7 +1,7 @@
 /*
     Observer design pattern 
         - It is a design pattern allows many object to subscribe to an event that are 
-          brodcast by another obejcts
+          broadcast by another objects
         - Its a one -> many relationship 
         - This is a push based pattern
         - Event handlers are the best examples of observer pattern
@@ -12,29 +12,28 @@
         - broadcast
         */
 
-        
-        class Subject {
-            constructor(){
-                this.observer = [];
-            }
-            
-            subscribe(fn){
-                this.observer.push(fn)
-            }
-            unsubscribe(fnToRemove){
-                this.observer = this.observer.filter(fn=>fn!==fnToRemove)
-            }
-            brodcast(){
-                this.observer.forEach(fn=>fn.call())
-            }
-        }
+class Subject {
+  constructor() {
+    this.observer = [];
+  }
 
-        let subject = new Subject()
+  subscribe(fn) {
+    this.observer.push(fn);
+  }
+  unsubscribe(fnToRemove) {
+    this.observer = this.observer.filter((fn) => fn !== fnToRemove);
+  }
+  broadcast() {
+    this.observer.forEach((fn) => fn.call());
+  }
+}
 
-        const observer1 = ()=>console.log("Observer 1..")
-        const observer2 = ()=>console.log("Observer 2..")
-        subject.subscribe(observer1)
-        subject.subscribe(observer2)
-        subject.unsubscribe(observer2)
+let subject = new Subject();
 
-        subject.brodcast()
+const observer1 = () => console.log("Observer 1..");
+const observer2 = () => console.log("Observer 2..");
+subject.subscribe(observer1);
+subject.subscribe(observer2);
+subject.unsubscribe(observer2);
+
+subject.broadcast();

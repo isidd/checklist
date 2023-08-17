@@ -11,7 +11,7 @@ class Store {
     // this.paymentProcessor = new PayPal(user)
   }
 
-  buyTshirt(quantity) {
+  buyTShirt(quantity) {
     this.paymentProcessor.pay(20 * quantity);
   }
 
@@ -38,6 +38,6 @@ class PayPalPaymentProcessor {
   }
 }
 
-let store = new Store(new PayPalPaymentProcessor("Sidd"));
+let store = new Store(new PayPalPaymentProcessor("Siddhartha"));
 store.buyShoes(2);
-store.buyTshirt(20);
+store.buyTShirt(20);

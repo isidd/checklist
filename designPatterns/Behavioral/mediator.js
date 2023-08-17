@@ -1,9 +1,9 @@
 /*
     Mediator design pattern 
         - It is a design pattern where pattern works as middleman 
-        - Its a many to many relationsship
-        - middleware in express library works on Mediator desin pattern
-        - It provides a seperation of concerns and eleminates code duplication
+        - Its a many to many relationship
+        - middleware in express library works on Mediator design pattern
+        - It provides a separation of concerns and eliminates code duplication
  */
 
 import express from ("express") ;

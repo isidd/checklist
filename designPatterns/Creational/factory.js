@@ -5,34 +5,34 @@
         - https://youtu.be/sJ-c3BA-Ypo 
  */
 
-        class IOSButton {
-            constructor(width){
-                this.width = width ;
-                this.name = "ios" ;
-            }
-        }
+class IOSButton {
+  constructor(width) {
+    this.width = width;
+    this.name = "ios";
+  }
+}
 
-        class AndroidButton {
-            constructor(width){
-                this.width = width ;
-                this.name = "android" ;
-            }
-        }
+class AndroidButton {
+  constructor(width) {
+    this.width = width;
+    this.name = "android";
+  }
+}
 
-        class ButtonFactory {
-              createButton (type,width){
-                switch (type) {
-                    case "ios" :
-                        return new IOSButton(width);
-                    case "android" :
-                        return new AndroidButton(width);
-                    default :
-                        return new IOSButton(width)
-                }
-              }  
-        }
+class ButtonFactory {
+  createButton(type, width) {
+    switch (type) {
+      case "ios":
+        return new IOSButton(width);
+      case "android":
+        return new AndroidButton(width);
+      default:
+        return new IOSButton(width);
+    }
+  }
+}
 
-        const button = new ButtonFactory();
-        let b1 = button.createButton("ios")
+const button = new ButtonFactory();
+let b1 = button.createButton("ios");
 
-        console.log({b1})
+console.log({ b1 });
