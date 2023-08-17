@@ -1,0 +1,6 @@
+/* 
+event Bubbling
+event Capturing
+event Propagation
+event Delegation
+*/

@@ -1,3 +1,5 @@
+// This is my Virtual DOM (where I can declarative change the Virtual DOM to change my Real DOM  )
+
 const markup = {
   type: "article",
   children: [
@@ -46,10 +48,17 @@ const markup = {
         },
       ],
     },
+    {
+      type: "marquee",
+      children: [
+        {
+          type: "text",
+          value: "Counter",
+        },
+      ],
+    },
   ],
 };
-
-console.log(markup);
 
 const parentElement = document.getElementById("app");
 
