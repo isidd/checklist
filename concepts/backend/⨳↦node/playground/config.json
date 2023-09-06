@@ -1,10 +1,10 @@
 {
-    "env" :{
-        "development" :{
-            "mongoDbUri" : ""
-        },
-        "prod" :{
-            "mongoDbUri" : "mongodb+srv://isidd:U$ha1maaa@slate-iecew.mongodb.net/slate"
-        }
+  "env": {
+    "development": {
+      "mongoDbUri": ""
+    },
+    "prod": {
+      "mongoDbUri": "MongoDBuri"
     }
+  }
 }
