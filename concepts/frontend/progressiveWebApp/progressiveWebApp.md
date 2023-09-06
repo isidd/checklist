@@ -6,7 +6,7 @@ Progressive web apps is a way to build websites that has a same experience as na
 we would be able to install a website on our device
 it will serve from a single code base
 like:
--offline mode -push notification -camera -geo location -motion -bluetooth .. (window.addEventListener('devicemotion',(event)))
+-offline mode -push notification -camera -geo location -motion -bluetooth .. (window.addEventListener('deviceMotion',(event)))
 Chrome lighthouse tool -> it will analyze performance accessibility and it will tell weather our app is installable or not
 generally it is useful to run an audit on site
 

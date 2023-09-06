@@ -14,3 +14,6 @@ intercepting network requests | Push notification
 | Instances | Many per tab | One for all tabs |
 | Lifespan | Same as tab | Independent |
 | Intended use | Parallelism | Offline support |
+
+Complete Service Workers Series :
+https://www.youtube.com/watch?v=NJRu3pmmN-4&list=PLyuRouwmQCjl4iJgjH3i61tkqauM-NTGj&ab_channel=SteveGriffith-Prof3ssorSt3v3

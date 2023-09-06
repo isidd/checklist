@@ -1,0 +1,14 @@
+        most common one is -> utf-8 | its character has same no as unicode
+
+
+                                            Buffers
+        Buffer is a container in memory that temporally holds fixed length sequence of bytes
+                                            (buffer)
+                                        |---------------|
+                                   ---> | 0 1 0 1 0 0 1 | --->
+                                   ---> | 1 1 1 1 1 1 1 | --->
+                                        |---------------|
+                                     It holds raw binary data
+
+            . Javascript does't have a way to deal with raw binary data
+            . But in Node we have buffers so it can deal with raw binary data (files, streams..)

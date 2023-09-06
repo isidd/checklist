@@ -4,6 +4,7 @@ https://www.youtube.com/watch?v=ZEpfiGu1f8g&ab_channel=WebDevelopmentTutorials
 Overview :
 
 In a SPA :
+Our browser is only loading a single web document from server one time and our web app will make incremental update to that document
 We only get One page from the server -> which can also download bunch of assets css images and also a lot of javascript
 and because of this Javascript code which will listen to
 
