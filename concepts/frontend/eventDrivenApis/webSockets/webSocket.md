@@ -28,7 +28,7 @@ document.querySelector('button').onclick = ()=>{
 socket.send('hello')
 }
 
-Problem with wen Sockets is that it does not emit the messages to all client
+Problem with web Sockets is that it does not emit the messages to all client
 for eg : Group chat
 Sol : socket.io
 WebRTC -> real time communication | but it is for browser to browser communication primary for video and voice
