@@ -1,7 +1,18 @@
 Link : https://www.udemy.com/course/microservices-with-node-js-and-react/learn/lecture/19223580#overview
 
 Overview :
+With Docker we are going to create a series of things called Container 
+Container is a isolated computing environment. It contains everything it require to run one single program
 
+                                          Running Application
+                                                    ↓
+                                    assumption about the environment 
+                                                    + 
+                                    precise knowledge how to start it (npm)
+
+                                (Docker solves both by containerizing it with a primary process)
+
+                                
 **_<!- General Flow of installing a Software ->_**
 
                        Installing Software
@@ -720,4 +731,27 @@ Overview :
         - When we run for the the docker build for the 2nd time after making changes in the codebase it is not going to install the
           dependencies again
 
-        . Siddhartha Pharasi
+        - create a file @ root -> .dockerignore | -> node_modules
+
+**_<!- Common Commands ->_**
+
+
+      - docker build -t sidd/node .
+              build an image based on dockerfile in the current directory. tag it as sidd/node
+      
+      - docker run [image id or image tag]
+              create and start container based on a provided image id or tag
+      
+      - docker run -it [container id] [command] | sh
+              create and start container and but also override the default command 
+      
+      - docker ps
+              print out the information about all of the running container
+
+      - docker exec -it [container id] [command] | sh
+              execute the given command in the running container
+      
+      - docker logs [container id]
+              print out logs from the given container
+
+
