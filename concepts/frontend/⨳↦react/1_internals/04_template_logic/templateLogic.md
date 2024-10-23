@@ -1,3 +1,4 @@
+```js
 let rootNode = document.getElementById("app");
 console.log(React);
 let root = ReactDOM.createRoot(rootNode);
@@ -27,64 +28,22 @@ function App() {
   );
 }
 
-// function Counter1() {
-//   return React.createElement(
-//     "article",
-//     null,
-//     React.createElement("h2", null, "Counter One"),
-//     React.createElement("p", null, "You have clicked 1 times"),
-//     React.createElement("button", null, "Click Me")
-//   );
-// }
-
-// function Counter2() {
-//   return React.createElement(
-//     "article",
-//     null,
-//     React.createElement("h2", null, "Counter Two"),
-//     React.createElement("p", null, "You have clicked 1 times"),
-//     React.createElement("button", null, "Click Me")
-//   );
-// }
-
+  /* 2 scenarios
+     1. isCounterOne = false
+*/ 
 function update(e) {
-  console.log(e);
+  isCounterOne = !isCounterOne;
+//   In this case the value of isCounterOne is changed to false and thats it 
+//   But it not going to effect the template logic as There is nothing which is telling react to re-render 
+}
+
+function rerender(e) {
   isCounterOne = !isCounterOne;
   // this is the logic that tells react to re-render
   root.render(React.createElement(App));
+  // In this case the React is intelligent enough to only append the section of the Counter2 not the complete tree
 }
 
-/* 
-    Passing element Properties (props)
-*/
-
-// function Counter1() {
-//   return React.createElement(
-//     "article",
-//     null,
-//     React.createElement("h2", null, "Counter One"),
-//     React.createElement("p", null, "You have clicked 1 times"),
-//     React.createElement(
-//       "button",
-//       { className: "btn", onClick: () => update() },
-//       "Click Me"
-//     )
-//   );
-// }
-
-// function Counter2() {
-//   return React.createElement(
-//     "article",
-//     null,
-//     React.createElement("h2", null, "Counter Two"),
-//     React.createElement("p", null, "You have clicked 1 times"),
-//     React.createElement(
-//       "button",
-//       { className: "btn", onClick: () => update() },
-//       "Click Me"
-//     )
-//   );
-// }
 
 /* 
 JSX (Javascript Syntax Extension / Javascript XML): It a XML-like syntax extension for ECMA Script
@@ -92,20 +51,23 @@ JSX (Javascript Syntax Extension / Javascript XML): It a XML-like syntax extensi
   It is used by the various transpilers/pre-processor to transform these token into ECMA Scripts
   - Transpilation : transforming the text of code written in one syntax and converting it into a different syntax that 
     does the same thing
+  If we write markup in our javascript file to define our tree data we need a transpiler to look at our code and then 
+  change it to something that Javascript recognizes before the code is given to the javascript engine to run..
+`                       
+                                    {
+                                        type : 'article',
+        <article>                       children : [
+            <h2></h2>      ==>          { 
+            <p></p>                          type : 'h2'
+        </article>                       }, 
+                                         {
+                                              type : 'p'
+                                          }
+                                        ]
+                                    }
     Babel is good transpiler that converts the JSX syntax to --> React POJO syntax
 
 */
-
-// function App() {
-//   console.log("herere");
-//   return (
-//     <section>
-//       <h1> Counters</h1>
-//       <p>Some random text</p>
-//       {isCounterOne ? <Counter1 /> : <Counter2 />}
-//     </section>
-//   );
-// }
 
 function Counter1({ name }) {
   return (
@@ -135,3 +97,6 @@ function Counter2({ name }) {
     </article>
   );
 }
+
+
+```

@@ -15,7 +15,7 @@ Overview :
         5G Connections, Storage Device, they all have their own system to store/emit -> (0s and 1s)
 
                                 ▢   ▢   ▢   ▢   ▢   ▢   ▢   ▢
-                                1    0    1   1    1    0   1   0
+                                1   0   1   1   1   0   1   0
 
                             ▢ -> 1 bit (it could have 2 states 0/1)
                             8 x ▢ -> 1 byte

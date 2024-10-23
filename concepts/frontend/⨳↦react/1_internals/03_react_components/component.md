@@ -1,3 +1,4 @@
+```js
 let rootNode = document.getElementById("app");
   console.log(React);
 let root = ReactDOM.createRoot(rootNode);
@@ -45,8 +46,7 @@ function Counter() {
 
 /* 
     Pure Component or Functions: 
-    - For the same input always create a same output | if the returned value from a function is predictable or deterministic 
-    then it is a pure function.. 
+    - For the same input always create a same output
     - causes no side effect
     React.memo()
     class App extends PureComponent{}
@@ -115,7 +115,7 @@ function Counter(props) {
 
   /* function Counter({name}) {
        name = "third";
-       In this case de-structured property can be mutated 
+       In this case de-structured property can be mutated and this is dangerous as property can be mutated from destructured value..
     */
   return React.createElement(
     "article",
@@ -125,3 +125,5 @@ function Counter(props) {
     React.createElement("button", null, "Click Me")
   );
 }
+
+```

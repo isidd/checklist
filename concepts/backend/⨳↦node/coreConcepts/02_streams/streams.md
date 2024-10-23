@@ -55,14 +55,14 @@ fs.createWriteStream() -> this is going to return
                         |-------------------------------------|
                         |     events | properties | methods   |
                         |    |----------------------------|   |
-    stream.write(data)->| -> |->▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ |   | --> write the data once the internal buffer is fulled
+    stream.write(data)->| -> |->    ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢   |   | --> write the data once the internal buffer is fulled
                         |    |----------------------------|   |
                         |     Internal buffer 16384 Bytes     |
                         |-------------------------------------|
 
 . Inside our writable stream object we have internal buffer 16384 Bytes by default
 . It will keep pushing chunks of data ▢(300/200/21223->bytes) until our buffer is completely filled
-. noe it will take the buffer data and do 1 write
+. now it will take the buffer data and do 1 write
 . If the last chunk exceeds the internal buffer space -> then it will increased bytes will be in memory and node will keep track if it and once the internal buffer is emptied it will push the remaining chunk to the Intern buffer
 . if the single chunk is as big as ▢(800MB) -> the node will have to put big amount of data in memory -> which is why we use buffer to lower this memory issue
 
@@ -113,7 +113,7 @@ fs.createReadStream() -> this is going to return
                         |     Internal buffer 16384 Bytes     |
                         |-------------------------------------|
 
-. When every we have the data of big chunk(800MB) to Write
+. When ever we have the data of big chunk(800MB) to Write
 We first need to create a -> Readable Stream (it will give us a data of ~16KB) and then -> we write to writable stream
 
 - Note : Duplex and Transform streams will have same Object as above and has a method events and property of both and also have 2 Internal Buffer one for reading and one for writing.

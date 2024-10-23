@@ -10,4 +10,5 @@ Overview :
         steps describing HOW.
       - It is taking away steps and providing an abstraction above the Imperative Programming
 
-      - Declarative Systems is always built on top Imperative Programming
+      - Declarative Systems is always built on top Imperative Programming -> something has to give implicit step by step instructions
+      

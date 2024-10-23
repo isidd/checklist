@@ -55,4 +55,5 @@ function Counter2() {
     </article>
   );
 }
+
 ```

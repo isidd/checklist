@@ -1,5 +1,25 @@
-// This is my Virtual DOM (where I can declarative change the Virtual DOM to change my Real DOM  )
+**_React Virtual DOM and Concepts_ :_**
+    How can we form a Javascript Object or set of Javascript object that define the HTML element or Node ? 
+    It should map : 
+        - type of HTML element (html tag or text) in case of text it should have value
+        - children [] ; 
 
+```html
+        <article>
+            <h1>Vardan</h1>
+            <p>
+                Count
+                <strong>
+                    <em> 1 </em>
+                </strong>
+                times
+            </p>
+            <button>Click me</button>
+            <marquee>Counter</marquee>
+        </article>
+```
+
+```js 
 const markup = {
   type: "article",
   children: [
@@ -58,20 +78,7 @@ const markup = {
       ],
     },
   ],
-};
-
-const parentElement = document.getElementById('app') ;
-console.log(parentElement)
-
-function addElements (pojoElement,parentElement){
-    let newDOMNode = pojoElement.type === 'text' ? document.createTextNode(pojoElement.value) : document.createElement(pojoElement.type)
-    if(pojoElement.children){
-      pojoElement.children.forEach(child => {
-          addElements(child,newDOMNode)
-      });
-    }
-    console.log(parentElement)
-    parentElement.appendChild(newDOMNode);
 }
-
-addElements(markup,parentElement)
+```
+This is the our own version DOM we might call it Virtual DOM.
+ 

@@ -1,0 +1,3 @@
+- **_<!- useRef ->_**
+        - This hook gives us the direct access of the dom element
+        - This hook also persist values between the render 

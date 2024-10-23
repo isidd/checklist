@@ -1,9 +1,14 @@
 // Elements are the great way for creating immutable DOM elements
 let rootNode = document.getElementById("app");
-console.log(React);
-let root = ReactDOM.createRoot(rootNode);
 
+let root = ReactDOM.createRoot(rootNode); /* createRoot takes a container and some options, It expects that the container is a DOM 
+element | it returns ReactDOMRoot  */
+
+// Three ways of attaching root to the App.
+
+root.render(React.createElement(App));
 root.render(App());
+root.render(<App />);
 
 function App() {
   return React.createElement(
@@ -35,7 +40,7 @@ setTimeout(() => {
   console.log(firstSectionElement);
 });
 
-({
+console.log((()=>({
   type: "section",
   key: null,
   ref: null,
@@ -44,4 +49,4 @@ setTimeout(() => {
   },
   _owner: null,
   _store: {},
-});
+}))())

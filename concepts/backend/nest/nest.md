@@ -1,5 +1,7 @@
 Link : https://www.udemy.com/course/nestjs-the-complete-developers-guide/learn/lecture/27441196#overview
 
+            Important Concept (Microservices) : https://www.youtube.com/watch?v=0WgO3-HVH94&list=PLJ8v-58rML8_p8vCXjoGVCltwhkmgdMVd&ab_channel=MichaelGuay 
+
 Overview : 
 
                                                           Nest Server
@@ -115,3 +117,4 @@ Overview :
 Testing : 
 
 
+<!-- https://www.youtube.com/watch?v=bP7CFznd8o0&list=PLHVUNsO6sqSpeFjQBl1KZMYEI-IL5idqZ -->
